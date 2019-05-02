@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+        #timeline div .date {
+            position: relative;
+            border-right: 1px solid #cccccc;
+            color: tomato;
+        }
+        #timeline div .date:before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: white;
+            border: 2px solid orange;
+            position: absolute;
+            right: -7px;
+            top: 16px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        .desc {
+            padding-left: 150px;
+        }
+
+        .desc h3 {
+            color: coral;
+        }
+
+
+        @media screen and (max-width: 800px){
+            #timeline div .date {
+                padding-left: 50px;
+                position: relative;
+                border: none;
+                border-left: 1px solid #cccccc;
+            }
+            #timeline div .date:before {
+                content: '';
+                width: 12px;
+                height: 12px;
+                background: white;
+                border: 2px solid orange;
+                position: absolute;
+                left: -7px;
+                top: 16px;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+
+            .desc {
+                padding-left: 50px;
+                position: relative;
+                border-left: 1px solid #cccccc;
+            }
+        }
+
+
+        @media screen and (max-width: 600px){
+            #timeline div .date {
+                padding-left: 50px;
+                position: relative;
+                border: none;
+                border-left: 1px solid #cccccc;
+            }
+            #timeline div .date:before {
+                content: '';
+                width: 12px;
+                height: 12px;
+                background: white;
+                border: 2px solid orange;
+                position: absolute;
+                left: -7px;
+                top: 16px;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+
+            .desc {
+                padding-left: 50px;
+                position: relative;
+                border-left: 1px solid #cccccc;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center; margin-top: 50px; color: blue">Experience</h1>
+
+<div id="timeline" class="container" style="margin-top: 100px; margin-bottom: 50px">
+    <div class="row">
+        <div class="date col-md-3">
+            <h2>2012</h2>
+        </div>
+        <div class="desc col-md-9">
+            <div>
+                <h3>Master of UI/UX design</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+            <div>
+                <h3>Master of Photoshop web design</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+        </div>
+        <div class="date col-md-3">
+            <h2>2014</h2>
+        </div>
+        <div class="desc col-md-9">
+            <div>
+                <h3>Master of HTML skill</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+            <div>
+                <h3>Master of CSS/CSS3 skill</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+        </div>
+        <div class="date col-md-3">
+            <h2>2016</h2>
+        </div>
+        <div class="desc col-md-9">
+            <div>
+                <h3>Master of JS skill</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+            <div>
+                <h3>Master of JQUERY skill</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+        </div>
+        <div class="date col-md-3">
+            <h2>2018</h2>
+        </div>
+        <div class="desc col-md-9">
+            <div>
+                <h3>Master of Bootstrap skill</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+            <div>
+                <h3>Master of SQL database</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+        </div>
+        <div class="date col-md-3">
+            <h2>2019</h2>
+        </div>
+        <div class="desc col-md-9">
+            <div>
+                <h3>Master of PHP skill</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+            <div>
+                <h3>Master of Laravel Framework</h3>
+                <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
