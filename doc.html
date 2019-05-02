@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" style="margin-top: 10px">
+    <h1 style="text-align: center">Media query chuẩn cho các thiết bị với breakpoint</h1>
+    <pre style="font-size: 24px; background: #cccccc; color: tomato">
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+          .example {background: red;}
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+          .example {background: green;}
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+          .example {background: blue;}
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+          .example {background: orange;}
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+          .example {background: pink;}
+        }
+    </pre>
+</div>
+
+<div class="container" style="margin-top: 10px">
+    <h1 style="text-align: center">Media query min-width tăng dần</h1>
+    <h3>tại sao lại tăng dần ?</h3>
+    <h4>Khi màn hình là 700px sẽ phù hợp với cả 2 MQ đầu tiên nhưng do MQ2 chạy
+    sau MQ1 nên sẽ được chọn để áp dụng</h4>
+    <pre style="font-size: 24px; background: #cccccc; color: tomato">
+        @media only screen and (min-width: 200px) {
+          .example {background: blue;}
+        }
+
+        @media only screen and (min-width: 600px) {
+          .example {background: green;}
+        }
+
+        @media only screen and (min-width: 800px) {
+          .example {background: yellow;}
+        }
+    </pre>
+</div>
+
+<div class="container" style="margin-top: 10px">
+    <h1 style="text-align: center">Media query max-width giảm dần</h1>
+    <h3>tại sao lại giảm dần ?</h3>
+    <h4>Khi màn hình là 400px sẽ phù hợp với cả 2 MQ đầu tiên nhưng do MQ2 chạy
+        sau MQ1 nên sẽ được chọn để áp dụng</h4>
+    <pre style="font-size: 24px; background: #cccccc; color: tomato">
+        @media only screen and (max-width: 800px) {
+          .example {background: blue;}
+        }
+
+        @media only screen and (max-width: 600px) {
+          .example {background: green;}
+        }
+
+        @media only screen and (max-width: 200px) {
+          .example {background: yellow;}
+        }
+    </pre>
+</div>
+
+
+
+</body>
+</html>
